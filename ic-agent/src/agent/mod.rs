@@ -4,9 +4,11 @@ pub mod agent_error;
 pub(crate) mod builder;
 pub mod http_transport;
 pub(crate) mod nonce;
-pub(crate) mod replica_api;
+#[allow(missing_docs)]
+pub mod replica_api;
 pub(crate) mod response;
-pub(crate) mod response_authentication;
+#[allow(missing_docs)]
+pub mod response_authentication;
 pub mod signed;
 pub mod status;
 
