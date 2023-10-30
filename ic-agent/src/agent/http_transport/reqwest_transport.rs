@@ -78,7 +78,8 @@ impl ReqwestTransport {
         }
     }
 
-    async fn request(
+    #[allow(missing_docs)]
+    pub async fn request(
         &self,
         http_request: Request,
     ) -> Result<(StatusCode, HeaderMap, Vec<u8>), AgentError> {
