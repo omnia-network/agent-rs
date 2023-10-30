@@ -55,7 +55,7 @@ pub(crate) fn lookup_canister_metadata<Storage: AsRef<[u8]>>(
     lookup_value(&certificate, path_canister).map(<[u8]>::to_vec)
 }
 
-pub(crate) fn lookup_request_status<Storage: AsRef<[u8]>>(
+pub fn lookup_request_status<Storage: AsRef<[u8]>>(
     certificate: Certificate<Storage>,
     request_id: &RequestId,
 ) -> Result<RequestStatusResponse, AgentError> {
