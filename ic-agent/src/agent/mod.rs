@@ -237,7 +237,8 @@ pub struct Agent {
     identity: Arc<dyn Identity>,
     ingress_expiry: Duration,
     root_key: Arc<RwLock<Vec<u8>>>,
-    transport: Arc<dyn Transport>,
+    /// The transport of the agent.
+    pub transport: Arc<dyn Transport>,
 }
 
 impl fmt::Debug for Agent {
